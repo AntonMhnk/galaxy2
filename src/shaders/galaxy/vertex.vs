@@ -13,7 +13,7 @@ void main() {
     // Animation
     float angle = atan(modelPosition.x, modelPosition.z);
     float distanceToCenter = length(modelPosition.xz);
-    float angelOffset = (1.0 / distanceToCenter) * uTime * 0.3;
+    float angelOffset = (1.0 / distanceToCenter) * uTime * 0.2;
     angle += angelOffset;
     modelPosition.x = cos(angle) * distanceToCenter;
     modelPosition.z = sin(angle) * distanceToCenter;
